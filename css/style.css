@@ -278,6 +278,88 @@ img {
   height: auto;
 }
 
+/* ===== SECTIONS COMMON ===== */
+.section {
+  padding: var(--section-padding) 48px;
+}
+
+.section-inner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--text-white);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 120px;
+  height: 3px;
+  background: var(--accent);
+  margin-top: 16px;
+}
+
+/* ===== LE CABINET ===== */
+.cabinet-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.agent-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: 10px;
+  padding: 24px 24px 28px;
+  transition: border-color 0.3s ease;
+}
+
+.agent-card:hover {
+  border-color: rgba(200, 149, 108, 0.3);
+}
+
+.agent-icon {
+  width: 28px;
+  height: 28px;
+  margin-bottom: 16px;
+}
+
+.agent-card h3 {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-white);
+  margin-bottom: 8px;
+}
+
+.agent-card p {
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-warm);
+}
+
+.cabinet-tagline {
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-style: italic;
+  color: var(--accent);
+  margin-top: 48px;
+  letter-spacing: 0.5px;
+}
+
 /* ===== ANIMATIONS ===== */
 .reveal {
   opacity: 0;
@@ -310,6 +392,18 @@ img {
 
   .hero-inner {
     gap: 40px;
+  }
+
+  .section {
+    padding: 80px 32px;
+  }
+
+  .cabinet-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .section-title {
+    font-size: 40px;
   }
 }
 
@@ -377,6 +471,23 @@ img {
     max-width: 480px;
     transform: none;
   }
+
+  .section {
+    padding: 64px 24px;
+  }
+
+  .cabinet-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .section-title {
+    font-size: 36px;
+  }
+
+  .cabinet-tagline {
+    font-size: 16px;
+  }
 }
 
 /* Mobile */
@@ -397,5 +508,18 @@ img {
 
   .nav-links {
     gap: 28px;
+  }
+
+  .cabinet-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+
+  .section-title::after {
+    width: 60px;
   }
 }
