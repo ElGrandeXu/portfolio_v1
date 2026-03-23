@@ -485,6 +485,149 @@ img {
   color: var(--text-warm);
 }
 
+/* ===== POUR QUI ===== */
+.target-row {
+  display: flex;
+  gap: 20px;
+  margin-top: 48px;
+}
+
+.target-card {
+  flex: 1;
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: 10px;
+  padding: 28px 24px;
+  transition: border-color 0.3s ease;
+}
+
+.target-card:hover {
+  border-color: rgba(200, 149, 108, 0.3);
+}
+
+.target-icon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 16px;
+}
+
+.target-card h3 {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-white);
+  margin-bottom: 8px;
+}
+
+.target-card p {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-warm);
+}
+
+/* ===== L'ARCHITECTE ===== */
+.architect-row {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.architect-avatar {
+  flex-shrink: 0;
+  width: 140px;
+  height: 140px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--accent);
+}
+
+.architect-avatar svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.architect-info h3 {
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-white);
+  margin-bottom: 12px;
+}
+
+.architect-credentials p {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--text-warm);
+}
+
+/* ===== CTA FINAL ===== */
+.cta-final {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.cta-final-inner {
+  text-align: center;
+}
+
+.cta-headline {
+  font-family: var(--font-heading);
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--text-white);
+  margin-bottom: 32px;
+}
+
+.cta-contact {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--text-warm);
+}
+
+.cta-separator {
+  opacity: 0.5;
+}
+
+.cta-linkedin {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-warm);
+  transition: color 0.3s ease;
+}
+
+.cta-linkedin:hover {
+  color: var(--accent);
+}
+
+.cta-linkedin svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  padding: 40px 48px;
+  text-align: center;
+  border-top: 1px solid rgba(42, 42, 42, 0.3);
+}
+
+.footer p {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: #555;
+  letter-spacing: 1px;
+}
+
 /* ===== ANIMATIONS ===== */
 .reveal {
   opacity: 0;
@@ -646,6 +789,20 @@ img {
     flex-direction: column;
     gap: 32px;
   }
+
+  .target-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .architect-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-headline {
+    font-size: 32px;
+  }
 }
 
 /* Mobile */
@@ -679,5 +836,17 @@ img {
 
   .section-title::after {
     width: 60px;
+  }
+
+  .cta-headline {
+    font-size: 28px;
+  }
+
+  .architect-info h3 {
+    font-size: 26px;
+  }
+
+  .footer {
+    padding: 32px 24px;
   }
 }
