@@ -629,6 +629,29 @@ img {
 }
 
 /* ===== ANIMATIONS ===== */
+
+/* Hero entrance */
+@keyframes heroFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero .hero-text {
+  animation: heroFadeIn 0.8s ease forwards;
+}
+
+.hero .hero-visual {
+  animation: heroFadeIn 0.8s ease 0.2s forwards;
+  opacity: 0;
+}
+
+/* Scroll reveal */
 .reveal {
   opacity: 0;
   transform: translateY(24px);
@@ -639,6 +662,19 @@ img {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Stagger delay for cards within grid */
+.agent-card.reveal:nth-child(2) { transition-delay: 0.05s; }
+.agent-card.reveal:nth-child(3) { transition-delay: 0.1s; }
+.agent-card.reveal:nth-child(4) { transition-delay: 0.15s; }
+.agent-card.reveal:nth-child(5) { transition-delay: 0.2s; }
+.agent-card.reveal:nth-child(6) { transition-delay: 0.25s; }
+.agent-card.reveal:nth-child(7) { transition-delay: 0.3s; }
+.agent-card.reveal:nth-child(8) { transition-delay: 0.35s; }
+.agent-card.reveal:nth-child(9) { transition-delay: 0.4s; }
+.agent-card.reveal:nth-child(10) { transition-delay: 0.45s; }
+.agent-card.reveal:nth-child(11) { transition-delay: 0.5s; }
+.agent-card.reveal:nth-child(12) { transition-delay: 0.55s; }
 
 /* ===== RESPONSIVE ===== */
 

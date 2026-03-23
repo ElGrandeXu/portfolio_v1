@@ -1,20 +1,27 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# EGX - Site Vitrine
 
-# Run and deploy your AI Studio app
+Site one-page du cabinet EGX. 12 agents IA, zero office.
 
-This contains everything you need to run your app locally.
+## Stack
 
-View your app in AI Studio: https://ai.studio/apps/b6fd6440-ead2-4002-b154-dc383e2868e9
+HTML / CSS / JS vanilla. Zero framework.
 
-## Run Locally
+## Lancer en local
 
-**Prerequisites:**  Node.js
+```
+python -m http.server 8080
+```
 
+Ouvrir `http://localhost:8080`
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Structure
+
+```
+index.html      # One-page complet
+css/style.css   # Styles + responsive
+js/main.js      # Navbar, scroll, animations
+```
+
+## Deploy
+
+GitHub Pages depuis la branche `main`.
