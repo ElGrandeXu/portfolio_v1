@@ -41,7 +41,7 @@ img {
   --font-heading: 'Space Grotesk', sans-serif;
   --font-body: 'Inter', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
-  --container-max: 1200px;
+  --container-max: 1400px;
   --section-padding: 120px;
   --grid-unit: 8px;
 }
@@ -53,7 +53,7 @@ img {
   left: 0;
   right: 0;
   z-index: 1000;
-  padding: 0 48px;
+  padding: 0 64px;
   background: rgba(10, 10, 10, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -164,7 +164,7 @@ img {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 0 48px;
+  padding: 0 64px;
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -249,7 +249,7 @@ img {
   position: relative;
   z-index: 1;
   width: 100%;
-  max-width: 560px;
+  max-width: 620px;
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid rgba(42, 42, 42, 0.4);
@@ -280,7 +280,7 @@ img {
 
 /* ===== SECTIONS COMMON ===== */
 .section {
-  padding: var(--section-padding) 48px;
+  padding: var(--section-padding) 64px;
 }
 
 .section-inner {
@@ -416,8 +416,8 @@ img {
 .cockpit-visual {
   position: relative;
   margin-top: 48px;
-  margin-left: -48px;
-  margin-right: -48px;
+  margin-left: -64px;
+  margin-right: -64px;
   padding: 40px 0 60px;
   background: radial-gradient(ellipse at center 60%, rgba(200, 149, 108, 0.04) 0%, transparent 60%);
 }
@@ -616,7 +616,7 @@ img {
 
 /* ===== FOOTER ===== */
 .footer {
-  padding: 40px 48px;
+  padding: 40px 64px;
   text-align: center;
   border-top: 1px solid rgba(42, 42, 42, 0.3);
 }
